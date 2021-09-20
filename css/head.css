@@ -1,0 +1,7 @@
+#header {
+    grid-area: hd;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: "sub tit tit tit";
+    align-items: center;
+}

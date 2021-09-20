@@ -1,0 +1,84 @@
+@import "head.css";
+@import "blog_post.css";
+@import "card.css";
+@import "button.css";
+@media(min-width:1300px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 120px 600px;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
+        border: 2px solid yellow;
+        /* text-align: center; */
+    }
+}
+
+div.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.flexbox a {
+    width: 300px;
+    height: 100px;
+}
+
+#footer {
+    grid-area: ft;
+    background-color: lightblue;
+}
+
+#sidebar {
+    display: flex;
+    grid-area: sd;
+    text-align: left;
+    justify-content: left;
+    flex-flow: column wrap;
+}
+
+#content {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#title {
+    background-image: url("../img/sea.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+#title {
+    text-align: center;
+    grid-area: tit;
+    height: inherit;
+}
+
+#subscribe {
+    text-align: left;
+    grid-area: sub;
+}
+
+.box {
+    border: 1px solid red;
+    background: #F8FA9D;
+}
+
+p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: green;
+}
